@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <title>Bar Chart</title>
+  <link rel="stylesheet" href="./styles/css/normalize.css">
+  <link rel="stylesheet" href="./styles/css/animation.css   ">
+  <link rel="stylesheet" href="./styles/css/config.css   ">
+  <link rel="stylesheet" href="./styles/css/main.css">
+</head>
+<body ng-app="app" ng-controller="MainCtrl">
+
+    <h1>Bar Chart Directive</h1>
+
+    <section class="container">
+        <h6>Demo</h6>
+        <section class="component">
+            <section class="demo">
+                <barchart model="data" width="350" height="100"></barchart>
+            </section>
+
+            <section class="code">
+                <pre contenteditable="">
+&lt;barchart width="300" height="100" model="array"&gt;
+&lt;/barchart&gt;
+                </pre>
+            </section>
+        </section>
+        <a href="/directive.js">Download Angular Directive</a><br>
+        <a href="/styles/css/main.css">Download CSS</a><br>
+        <a href="/styles/main.scss">Download SASS</a>
+    </section>
+
+    <section name></section>
+
+
+</body>
+
+    <script src="components/d3/d3.js"></script>
+    <script src="components/angular/angular.js"></script>
+    <script src="directive.js"></script>
+
+</html>

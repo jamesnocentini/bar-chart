@@ -1,0 +1,128 @@
+// DO NOT TOUCH THIS FILE - CONFIGURATION
+
+/* Import Libs */
+@import "utils";
+@import "compass";
+
+/* Colors */
+$black: #222;
+$white: #fff;
+
+$darkGray     :      #999;
+$gray         :          #ccc;
+$lightGray    :     #e9e9e9;
+$paleGray     :      #f9f9f9;
+
+$orange       :        #ff5c00;
+$darkOrange   :    #d35500;
+$green        :         #5eab1f;
+$paleGreen    :     #eff6e9;
+$darkGreen    :     #3d7314;
+
+$blue         :          #1885F0;
+$red          :           #cc2114;
+
+/* Typography Colors */
+$baseTypeColor: 1.5em !default;
+$baseFontSize: 14px !default;
+$baseFontFamily: OpenSans, sans-serif;
+$baseTextColor: $black;
+
+
+body{
+  padding       :          0;
+  margin        :          0;
+
+  font-size     :          $baseFontSize;
+  font-family   :          $baseFontFamily;
+}
+
+/* Typography */
+h1{
+  @include fontSize(30px);
+  line-height: 1.4;
+  margin: 23px 0;
+
+  text-align: center;
+}
+h2{
+  @include fontSize(28px);
+  line-height: 1.4;
+  margin: 20px 0;
+}
+h3{
+  @include fontSize(24px);
+  line-height: 1.4;
+  margin: 17px 0;
+}
+h4{
+  @include fontSize(20px);
+  line-height: 1.5;
+  margin: 13px 0;
+}
+h5{
+  @include fontSize(16px);
+  line-height: 1.5;
+  margin: 11px 0;
+}
+h6{
+  @include fontSize(14px);
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+
+// UI Kit Specific Config
+
+body h1:first-child {
+  background-color: $gray;
+
+  margin-top: 0;
+}
+
+.container{
+  width: 700px;
+  margin: 0 auto;
+}
+
+.container > h6{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.component {
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  @include border-top-radius(10px);
+
+  .demo{
+    background-color: $lightGray;
+    width: inherit;
+    height: 200px;
+    @include border-top-radius(10px);
+  }
+
+  .code{
+    background-color: $darkGray;
+    width: inherit;
+    height: 100px;
+    @include border-bottom-radius(10px);
+
+    pre{
+      width:80%;
+      height: 30px;
+
+      margin: 0px auto;
+      padding: 10px 0;
+
+    }
+  }
+}
+
+body h1:first-child {
+  background-color: $lightGray;
+
+  margin-top: 0;
+}
+
